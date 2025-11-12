@@ -7,4 +7,6 @@ add_executable(p_tree main.c
         config.h
         ordenacao.c
         ordenacao.h
+        arvore.c
+        arvore.h
 )

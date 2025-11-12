@@ -12,4 +12,11 @@ typedef struct {
     char matricula[13];
     int ultimo_digito;
 } Aluno;
+
+typedef struct No {
+    int dado;
+    struct No *esquerda;
+    struct No *direita;
+};
+
 #endif //P_TREE_CONFIG_H
