@@ -50,3 +50,27 @@ int seleciona_algoritmo(int ultimo_digito, char **algoritmo, char **percurso) {
     }
     return resultado_mod_3;
 }
+
+void insertion_sort(int vetor[], int tamanho, long int *comparacoes) {
+    *comparacoes = 0; // inicia contador
+
+    for (int i = 1; i < tamanho; i++) {
+        int chave = vetor[i];
+        int j = i - 1;
+
+        while (j >= 0) {
+            (*comparacoes)++;
+
+            if (vetor[j] == chave) {
+
+                vetor[j + 1] = vetor[j];
+                j = j- 1;
+            } else {
+                break;
+            }
+        }
+        vetor[j + 1] = chave;
+    }
+
+
+}
