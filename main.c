@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
+#include "arvore.h"
 #include "config.h"
 #include "ordenacao.h"
 
@@ -62,6 +64,23 @@ int main() {
 
     printf("Algoritmo Usado: %s\n", algoritmo_ordenacao);
     printf("Total de Comparacoes: %ld\n", total_comparacoes);
+    printf("----------------------------------\n");
+
+    No* raiz = NULL;
+
+    for (int i = 0; i < TAMVT; i++) {
+        raiz = inserir_no(raiz, vetor_copia[i]);
+    }
+
+    printf("\n--- Percurso da Árvore (%s) ---\n", percurso_arvore);
+    printf("Percurso: [");
+    pos_ordem(raiz);
+    printf("]\n");
+
+    int h = altura(raiz);
+    if (h >= 0) {
+        printf("Altura da Árvore Binária: %d\n", h);
+    }
     printf("----------------------------------\n");
 
     return 0;
