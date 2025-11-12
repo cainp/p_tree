@@ -13,4 +13,14 @@ No* criar_novo_no(int valor) {
     novo_no->direita = NULL;
     return novo_no;
 }
-
+No* inserir(No* raiz, int valor) {
+    if (raiz == NULL) {
+        return criar_novo_no(valor);
+    }
+    if (raiz->dado < valor) {
+        raiz->esquerda = criar_novo_no(valor);
+    } else if (raiz->dado > valor) {
+        raiz->direita = criar_novo_no(valor);
+    }
+    return raiz;
+}
