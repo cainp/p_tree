@@ -1,7 +1,3 @@
-//
-// Created by caina on 11/11/2025.
-//
-
 #ifndef P_TREE_CONFIG_H
 #define P_TREE_CONFIG_H
 #define TAMVT 20

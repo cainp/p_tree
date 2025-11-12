@@ -1,5 +1,3 @@
-
-
 #ifndef P_TREE_ORDENACAO_H
 #define P_TREE_ORDENACAO_H
 int ja_existe(int vetor[], int tamanho, int valor_novo);

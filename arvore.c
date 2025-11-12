@@ -13,7 +13,7 @@ No* criar_novo_no(int valor) {
     novo_no->direita = NULL;
     return novo_no;
 }
-No* inserir(No* raiz, int valor) {
+No* inserir_no(No* raiz, int valor) {
     if (raiz == NULL) {
         return criar_novo_no(valor);
     }

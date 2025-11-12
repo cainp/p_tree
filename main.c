@@ -72,14 +72,14 @@ int main() {
         raiz = inserir_no(raiz, vetor_copia[i]);
     }
 
-    printf("\n--- Percurso da Árvore (%s) ---\n", percurso_arvore);
+    printf("\n--- Percurso da Arvore (%s) ---\n", percurso_arvore);
     printf("Percurso: [");
     pos_ordem(raiz);
     printf("]\n");
 
     int h = altura(raiz);
     if (h >= 0) {
-        printf("Altura da Árvore Binária: %d\n", h);
+        printf("Altura da Arvore Binaria: %d\n", h);
     }
     printf("----------------------------------\n");
 

@@ -1,7 +1,3 @@
-//
-// Created by caina on 11/11/2025.
-//
-
 #ifndef P_TREE_ARVORE_H
 #define P_TREE_ARVORE_H
 
@@ -15,6 +11,6 @@ void pre_ordem(No* raiz);
 
 void em_ordem(No* raiz);
 
-void pos_ordem(No* raiz)
+void pos_ordem(No* raiz);
 
 #endif //P_TREE_ARVORE_H
