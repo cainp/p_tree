@@ -51,5 +51,7 @@ int main() {
     printf("Percurso da Arvore: %s\n", percurso_arvore);
     printf("----------------------------------\n");
 
+    insertion_sort(vetor_original, TAMVT, &total_comparacoes);
+
     return 0;
 }
