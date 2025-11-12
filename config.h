@@ -17,6 +17,6 @@ typedef struct No {
     int dado;
     struct No *esquerda;
     struct No *direita;
-};
+} No;
 
 #endif //P_TREE_CONFIG_H
