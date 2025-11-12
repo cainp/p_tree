@@ -53,5 +53,16 @@ int main() {
 
     insertion_sort(vetor_original, TAMVT, &total_comparacoes);
 
+    printf("\n--- Vetor Ordenado (%s) ---\n", algoritmo_ordenacao);
+    printf("Vetor Ordenado: [");
+    for (int i = 0; i < TAMVT; i++) {
+        printf("%d, ", vetor_original[i]);
+    }
+    printf("]\n");
+
+    printf("Algoritmo Usado: %s\n", algoritmo_ordenacao);
+    printf("Total de Comparacoes: %ld\n", total_comparacoes);
+    printf("----------------------------------\n");
+
     return 0;
 }
