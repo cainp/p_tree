@@ -61,7 +61,7 @@ void insertion_sort(int vetor[], int tamanho, long int *comparacoes) {
         while (j >= 0) {
             (*comparacoes)++;
 
-            if (vetor[j] == chave) {
+            if (vetor[j] > chave) {
 
                 vetor[j + 1] = vetor[j];
                 j = j- 1;

@@ -17,10 +17,10 @@ No* inserir_no(No* raiz, int valor) {
     if (raiz == NULL) {
         return criar_novo_no(valor);
     }
-    if (raiz->dado < valor) {
-        raiz->esquerda = criar_novo_no(valor);
-    } else if (raiz->dado > valor) {
-        raiz->direita = criar_novo_no(valor);
+    if (valor < raiz->dado < valor) {
+        raiz->esquerda = inserir_no(raiz->esquerda, valor);
+    } else if (valor > raiz->dado) {
+        raiz->direita = inserir_no(raiz->direita, valor);
     }
     return raiz;
 }
