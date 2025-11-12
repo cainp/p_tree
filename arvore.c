@@ -17,7 +17,7 @@ No* inserir_no(No* raiz, int valor) {
     if (raiz == NULL) {
         return criar_novo_no(valor);
     }
-    if (valor < raiz->dado < valor) {
+    if (valor < raiz->dado) {
         raiz->esquerda = inserir_no(raiz->esquerda, valor);
     } else if (valor > raiz->dado) {
         raiz->direita = inserir_no(raiz->direita, valor);
