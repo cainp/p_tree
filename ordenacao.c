@@ -96,3 +96,23 @@ void booble_sort(int vetor[], int tamanho, long int *comparacoes) {
         }
     }
 }
+
+void selection_sort(int vetor[], int tamanho, long int *comparacoes) {
+    *comparacoes = 0;
+    int i, j, indice_do_menor, temp;
+
+    for (i = 0; i < tamanho - 1; i++) {
+        indice_do_menor = i;
+        for (j = i + 1; j < tamanho; j++) {
+            (*comparacoes)++;
+            if (vetor[j] < vetor[indice_do_menor]) {
+                indice_do_menor = j;
+            }
+        }
+        if (indice_do_menor != i) {
+            temp = vetor[i];
+            vetor[i] = vetor[indice_do_menor];
+            vetor[indice_do_menor] = temp;
+        }
+    }
+}
