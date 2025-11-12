@@ -74,3 +74,25 @@ void insertion_sort(int vetor[], int tamanho, long int *comparacoes) {
 
 
 }
+
+void booble_sort(int vetor[], int tamanho, long int *comparacoes) {
+    *comparacoes = 0;
+    int i, j, temp;
+    int trocou;
+
+    for (i = 0; i < tamanho - 1; i++) {
+        trocou = 0;
+        for (j = 0; j < tamanho - i - 1; j++) {
+            (*comparacoes)++;
+            if (vetor[j] > vetor[j + 1]) {
+                temp = vetor[j];
+                vetor[j] = vetor[j + 1];
+                vetor[j + 1] = temp;
+                trocou = 1;
+            }
+        }
+        if (trocou == 0) {
+            break;
+        }
+    }
+}
