@@ -34,5 +34,22 @@ int main() {
     }
     printf("]\n");
 
+
+    char *algoritmo_ordenacao;
+    char *percurso_arvore;
+    long int total_comparacoes = 0;
+
+    int resultado_mod_3 = seleciona_algoritmo(
+        grupo[0].ultimo_digito,
+        &algoritmo_ordenacao,
+        &percurso_arvore
+    );
+
+    printf("\n--- Determinacao do Algoritmo ---\n");
+    printf("Resultado Modulo 3: %d\n", resultado_mod_3);
+    printf("Algoritmo Escolhido: %s\n", algoritmo_ordenacao);
+    printf("Percurso da Arvore: %s\n", percurso_arvore);
+    printf("----------------------------------\n");
+
     return 0;
 }

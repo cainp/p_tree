@@ -30,3 +30,23 @@ void gerar_e_copiar_vetor(int vetor_original[], int vetor_copia[]) {
     }
 }
 
+int seleciona_algoritmo(int ultimo_digito, char **algoritmo, char **percurso) {
+
+    int resultado_mod_3 = ultimo_digito % 3;
+
+    switch (resultado_mod_3) {
+        case 0:
+            *algoritmo = "booble sort";
+            *percurso = "pre-ordem";
+            break;
+        case 1:
+            *algoritmo = "selection sort";
+            *percurso = "em ordem";
+            break;
+        case 2:
+            *algoritmo = "insertion sort";
+            *percurso = "pos-ordem";
+            break;
+    }
+    return resultado_mod_3;
+}
